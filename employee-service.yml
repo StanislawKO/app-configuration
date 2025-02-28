@@ -29,7 +29,7 @@ resilience4j:
     instances:
       cv-service:
         ignore-exceptions:
-          - org.k5va.error.DataNotFoundException
+          - com.stas_kozh.error.DataNotFoundException
         failureRateThreshold: 50
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 10s
